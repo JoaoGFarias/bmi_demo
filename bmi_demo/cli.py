@@ -29,5 +29,5 @@ def classify(
     typer.echo(f"The BMI classification of weight {weight} and height {height} is {classification}")
 
 
-if __name__ == "__main__":
+def main():
     app()
