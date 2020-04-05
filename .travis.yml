@@ -1,0 +1,21 @@
+dist: xenial
+language: python
+python:
+  - "3.7.3"
+  - "3.7-dev"
+  - "3.8-dev"
+  - "nightly"
+
+before_install:
+  - pip install poetry
+  - chmod +x Makefile
+
+install:
+  - make init
+
+script:
+  - make test
+
+after_success:
+  - pip install codecov
+  - codecov
