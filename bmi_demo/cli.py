@@ -24,10 +24,13 @@ def calculate(
 def classify(
     weight: float = weight_option, 
     height: float = height_option):
-    """Determines the BMI groupd of a certain weight and height."""
+    """Determines the BMI group of a certain weight and height."""
     classification = classify_bmi(weight, height)
     typer.echo(f"The BMI classification of weight {weight} and height {height} is {classification}")
 
 
 def main():
+    app()
+
+if __name__ == "__main__":
     app()
