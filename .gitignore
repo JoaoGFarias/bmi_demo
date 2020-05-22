@@ -1,3 +1,6 @@
 *.egg-info/
 *cache*
 dist/
+.venv/
+.vscode/
+.idea/
