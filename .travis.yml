@@ -15,9 +15,9 @@ install:
 
 script:
   - make test
+  - make build
+  - make publish
 
 after_success:
   - pip install codecov
   - codecov
-  - make build
-  - make publish
